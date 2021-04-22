@@ -1,3 +1,26 @@
+## hls_lfcd_lds_driver (foxy) - 2.0.2-4
+
+The packages in the `hls_lfcd_lds_driver` repository were released into the `foxy` distro by running `/usr/bin/bloom-release hls_lfcd_lds_driver -t foxy -r foxy --edit` on `Thu, 22 Apr 2021 07:13:37 -0000`
+
+The `hls_lfcd_lds_driver` package was released.
+
+Version of package(s) in repository `hls_lfcd_lds_driver`:
+
+- upstream repository: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+- release repository: https://github.com/robotis-ros2-release/hls_lfcd_lds_driver-release.git
+- rosdistro version: `2.0.2-3`
+- old version: `2.0.2-3`
+- new version: `2.0.2-4`
+
+Versions of tools used:
+
+- bloom version: `0.10.6`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## hls_lfcd_lds_driver (rolling) - 2.0.2-1
 
 The packages in the `hls_lfcd_lds_driver` repository were released into the `rolling` distro by running `/usr/bin/bloom-release hls_lfcd_lds_driver -t rolling -r rolling --edit` on `Fri, 16 Apr 2021 08:16:50 -0000`
