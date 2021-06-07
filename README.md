@@ -1,3 +1,26 @@
+## hls_lfcd_lds_driver (dashing) - 2.0.3-1
+
+The packages in the `hls_lfcd_lds_driver` repository were released into the `dashing` distro by running `/usr/bin/bloom-release hls_lfcd_lds_driver -t dashing -r dashing` on `Mon, 07 Jun 2021 07:24:30 -0000`
+
+The `hls_lfcd_lds_driver` package was released.
+
+Version of package(s) in repository `hls_lfcd_lds_driver`:
+
+- upstream repository: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+- release repository: https://github.com/robotis-ros2-release/hls_lfcd_lds_driver-release.git
+- rosdistro version: `2.0.2-5`
+- old version: `2.0.2-6`
+- new version: `2.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.1`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## hls_lfcd_lds_driver (dashing) - 2.0.2-6
 
 The packages in the `hls_lfcd_lds_driver` repository were released into the `dashing` distro by running `/usr/bin/bloom-release hls_lfcd_lds_driver -t dashing -r dashing --edit` on `Fri, 04 Jun 2021 02:08:56 -0000`
