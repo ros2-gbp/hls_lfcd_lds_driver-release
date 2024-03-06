@@ -1,0 +1,13 @@
+Source: ros-rolling-hls-lfcd-lds-driver
+Section: misc
+Priority: optional
+Maintainer: Will Son <willson@robotis.com>
+Build-Depends: debhelper (>= 9.0.0), ament-cmake, libboost-system-dev, libsensor-msgs-dev, python3-sensor-msgs, ros-rolling-rclcpp, ros-sensor-msgs, ros-rolling-ros-workspace
+Homepage: http://wiki.ros.org/hls_lfcd_lds_driver
+Standards-Version: 3.9.2
+
+Package: ros-rolling-hls-lfcd-lds-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-system-dev, libsensor-msgs-dev, python3-sensor-msgs, ros-rolling-rclcpp, ros-sensor-msgs, ros-rolling-ros-workspace
+Description: ROS package for LDS(HLS-LFCD2).
+ The LDS (Laser Distance Sensor) is a sensor sending the data to Host for the simultaneous localization and mapping (SLAM). Simultaneously the detecting obstacle data can also be sent to Host. HLDS(Hitachi-LG Data Storage) is developing the technology for the moving platform sensor such as Robot Vacuum Cleaners, Home Robot, Robotics Lawn Mower Sensor, etc.
