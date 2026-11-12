@@ -200,11 +200,11 @@ tracks:
     patches: null
     release_inc: '2'
     release_repo_url: null
-    release_tag: :{version}
+    release_tag: 2.1.2
     ros_distro: kilted
     vcs_type: git
     vcs_uri: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
-    version: :{auto}
+    version: 2.1.2
   lyrical:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
