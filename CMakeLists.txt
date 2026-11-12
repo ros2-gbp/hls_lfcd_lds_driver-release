@@ -24,7 +24,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(Boost REQUIRED system)
+find_package(Boost REQUIRED)
+find_package(Threads REQUIRED)
 
 ################################################################################
 # Build
@@ -34,13 +35,15 @@ include_directories(
   ${Boost_INCLUDE_DIRS}
 )
 
-add_executable(hlds_laser_publisher	src/hlds_laser_publisher.cpp)
-target_link_libraries(hlds_laser_publisher ${Boost_LIBRARIES})
-ament_target_dependencies(hlds_laser_publisher
-  rclcpp
-  std_msgs
-  sensor_msgs
+add_executable(hlds_laser_publisher src/hlds_laser_publisher.cpp)
+target_link_libraries(hlds_laser_publisher
+  Boost::headers
+  Threads::Threads
+  ${sensor_msgs_TARGETS}
+  ${std_msgs_TARGETS}
+  rclcpp::rclcpp
 )
+
 
 ################################################################################
 # Install
@@ -57,8 +60,10 @@ install(
 ################################################################################
 # Macro for ament package
 ################################################################################
-ament_export_dependencies(rclcpp)
-ament_export_dependencies(std_msgs)
-ament_export_dependencies(sensor_msgs)
+ament_export_dependencies(
+  rclcpp
+  std_msgs
+  sensor_msgs
+)
 ament_export_include_directories(include)
 ament_package()
